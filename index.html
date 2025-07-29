@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <h2>Now Playing:</h2>
+      <p id="song-title">Khadeair ft Peekay Mzee & Kaytah-Magumba Mp3</p>
+      <audio
+        id="audio"
+        src="music/Khadeair_-_Magumba_ft_Peekay_Mzee_Kaytah.mp3"
+      ></audio>
+
+      <button id="play-btn">Play</button>
+
+      <div class="volume-control">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+      </div>
+
+      <div class="progress-container">
+        <input type="range" id="progress" value="0" min="0" step="1" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
